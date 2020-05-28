@@ -1,4 +1,43 @@
-.float{
+.float-usa{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:170px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:25px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float-netherlands{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:120px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:25px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float-france{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:70px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:25px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float-turkey{
 	position:fixed;
 	width:30px;
 	height:30px;
@@ -12,9 +51,17 @@
 }
 
 .usa{
-	margin-top:22px;
+	margin-top:30px;
 }
 
 .netherlands{
-	margin-top:44px;
+	margin-top:60px;
+}
+
+.france {
+	margin-top:90px;
+}
+
+.turkey{
+	margin-top:120px;
 }
