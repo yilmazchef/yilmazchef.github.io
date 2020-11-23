@@ -17,10 +17,3 @@ function generatePDF() {
 document.getElementById("print-btn").addEventListener("click", generatePDF);
 
 M.AutoInit();
-
-function showMenu() {
-    var instance = M.Sidenav.getInstance(elem);
-    alert("button is clicked")
-}
-
-document.getElementById("mobile-menu").addEventListener("click", showMenu);

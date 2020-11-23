@@ -20,16 +20,19 @@
             <i class="large material-icons">mode_edit</i>
         </a>
         <ul>
-            <li><a href="tel:+32467711709" class="btn-floating green darken-1"><i class="material-icons">phone</i></a></li>
+            <li><a href="tel:+32467711709" class="btn-floating green darken-1"><i class="material-icons">phone</i></a>
+            </li>
             <li><a href="mailto:yilmaz@mail.be" class="btn-floating blue"><i class="material-icons">email</i></a></li>
-            <li><a href="https://goo.gl/maps/uXjksYPNz6N8xFbK7" class="btn-floating darken-2 yellow"><i class="material-icons black-text">maps</i></a></li>
-            <li><a href="https://www.github.com/yilmazchef" class="btn-floating black"><i class="material-icons">code</i></a></li>
+            <li><a href="https://goo.gl/maps/uXjksYPNz6N8xFbK7" class="btn-floating darken-2 yellow"><i
+                        class="material-icons black-text">maps</i></a></li>
+            <li><a href="https://github.com/yilmazchef?tab=repositories" class="btn-floating black"><i
+                        class="material-icons">code</i></a></li>
         </ul>
     </div>
 
     <nav>
         <div class="nav-wrapper header">
-            <a href="#!" class="brand-logo center"><img src="images/ProfilePhoto.png" alt="Profile"></a>
+            <a href="#!" class="brand-logo center hide-on-med-and-down"><img src="images/ProfilePhoto.png" alt="Profile"></a>
             <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#info">Info</a></li>
@@ -64,23 +67,6 @@
                 <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
             </ul>
 
-            <ul id="mobile-menu" class="sidenav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="images/ProfilePhoto.png">
-                        </div>
-                <li><a class="waves-effect" href="#info">Info</a></li>
-                <li><a class="waves-effect" href="#skills">Skills</a></li>
-                <li><a class="waves-effect" href="#courses">Courses</a></li>
-                <li><a class="waves-effect" href="#experience">Experience</a></li>
-                <li><a class="waves-effect" href="#education">Education</a></li>
-                <li><a class="waves-effect" href="#references">References</a></li>
-                <li><a class="waves-effect" href="#interests">Interests</a></li>
-                <li><a class="waves-effect" href="#hobbies">Hobbies</a></li>
-        </div>
-        </li>
-        </ul>
         </div>
     </nav>
 
@@ -92,27 +78,27 @@
                     <h4>Info</h4>
                 </div>
             </div>
-            <div class="row hide-on-small-and-down">
-                <div class="col s12 m3 l3">
+            <div class="row">
+                <div class="col s12 m6 l3">
                     <i class="small material-icons">phone</i>
-                    </span>+32 467 71 17 09<span>
+                    <span>+32 467 71 17 09</span>
                 </div>
-                <div class="col s12 m3 l3">
+                <div class="col s12 m6 l3">
                     <i class="small material-icons">email</i>
-                    </span>yilmaz@mail.be<span>
+                    <span>yilmaz@mail.be</span>
                 </div>
-                <div class="col s12 m3 l3">
+                <div class="col s12 m6 l3">
                     <i class="small material-icons">home</i>
-                    </span>Zele 9240 East Flanders<span>
+                    <span>Zele 9240 East Flanders</span>
                 </div>
-                <div class="col s12 m3 l3">
+                <div class="col s12 m6 l3">
                     <i class="small material-icons">code</i>
-                    </span>github.com/yilmazchef<span>
+                    <span>github.com/yilmazchef</span>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <blockquote>Solving serious problems is my endeavor.
+                    <blockquote style="font-size: large;">Solving serious problems is my endeavor.
                         Coding is not only a work, it is a way of life.
                         </br> I am looking for a job I love.</blockquote>
                 </div>
@@ -122,17 +108,22 @@
 
     <section id="projects">
         <div class="container content">
-            <div id="skills" class="row">
+            <div id="projects" class="row">
                 <div class="col">
                     <h4>Projects</h4>
                 </div>
             </div>
             <div id="projects" class="row">
                 <div class="col s12 m12 l12">
-                    <div class="carousel carousel-slider">
+                    <div class="carousel carousel-slider hide-on-small-and-down">
                         <a class="carousel-item" href="#one!"><img src="images/hanedan_be.png"></a>
                         <a class="carousel-item" href="#two!"><img src="images/hanedan_be.png"></a>
                         <a class="carousel-item" href="#three!"><img src="images/hanedan_be.png"></a>
+                    </div>
+                    <div class="carousel carousel-slider hide-on-med-and-up">
+                        <a class="carousel-item" href="#one!"><img src="images/hanedan_be_vertical.png"></a>
+                        <a class="carousel-item" href="#two!"><img src="images/hanedan_be_vertical.png"></a>
+                        <a class="carousel-item" href="#three!"><img src="images/hanedan_be_vertical.png"></a>
                     </div>
                 </div>
             </div>
@@ -144,6 +135,80 @@
             <div id="skills" class="row">
                 <div class="col">
                     <h4>Skills</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 lg4">
+                    <span>Spring, Spring Boot, Maven, Gradle.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Vaadin, Thymeleaf.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>JS, TS & Angular.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>MySql, Elise Match, MSSQL, MongoDB.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Routers, AD, Shell.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Jenkins, Docker, Kubernetes, VMs.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Wordpress, WooCommerce.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Git, Gitlab.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Jira, Confluence, Scrum.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>MS Office, Google Docs, Prezi, Doodle.</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>RPi, Arduino</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 lg4">
+                    <span>Figma, Sketch UI Tools</span>
+                    <div class="progress">
+                        <div class="determinate" style="width: 85%"></div>
+                    </div>
                 </div>
             </div>
         </div>

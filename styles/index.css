@@ -1,0 +1,20 @@
+body {
+    color     : #232C39;
+    background: #F3F3F3;
+}
+
+
+.header {
+    position        : absolute;
+    background-color: #232C39 !important;
+    top             : 0% !important;
+    width           : 100%;
+}
+
+
+.footer {
+    position        : absolute;
+    background-color: #232C39 !important;
+    bottom          : 0% !important;
+    width           : 100%;
+}
