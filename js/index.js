@@ -7,7 +7,7 @@ function generatePDF() {
         filename: 'yilmaz_mustafa_cv_en.pdf',
         image: { type: 'jpeg', quality: 1.00 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'letter', orientation: 'portrait' }
+        jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait' }
     };
 
     // New Promise-based usage:
