@@ -6,57 +6,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/materialize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="js/materialize.js"></script>
-    <script src="js/html2pdf.js"></script>
-
-    <script>
-        function generatePDF() {
-            // Choose the element that my cv is rendered in.
-            const element = document.getElementById("cv");
-            // Choose the element and save the PDF for our user.
-            html2pdf()
-                .from(element)
-                .save();
-        }
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-
-    </script>
-    <script>
-        var instance = M.Carousel.init({
-            fullWidth: true
-        });
-    </script>
-    <script>
-        $("a.toscroll").on('click', function (e) {
-            var url = e.target.href;
-            var hash = url.substring(url.indexOf("#") + 1);
-            $('html, body').animate({
-                scrollTop: $('#' + hash).offset().top
-            }, 500);
-            return false;
-        });
-    </script>
 
     <title>CV EN</title>
 
 </head>
 
-<body>
+<body id="printable_area">
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a href="tel:+32467711709" class="btn-floating green darken-1"><i class="material-icons">phone</i></a></li>
+            <li><a href="mailto:yilmaz@mail.be" class="btn-floating blue"><i class="material-icons">email</i></a></li>
+            <li><a href="https://goo.gl/maps/uXjksYPNz6N8xFbK7" class="btn-floating darken-2 yellow"><i class="material-icons black-text">maps</i></a></li>
+            <li><a href="https://www.github.com/yilmazchef" class="btn-floating black"><i class="material-icons">code</i></a></li>
+        </ul>
+    </div>
 
     <nav>
         <div class="nav-wrapper header">
             <a href="#!" class="brand-logo center"><img src="images/ProfilePhoto.png" alt="Profile"></a>
-            <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#info">Info</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -67,29 +41,58 @@
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
             </ul>
+            <ul class="left hide-on-med-and-down">
+                <li><a id="print-btn" href="#">Print as PDF</a></li>
+            </ul>
+
+            <ul id="mobile-menu" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="images/MobileBG.png" style="height: 100%;" width="100%">
+                        </div>
+                        <a href="#user"><img class="circle" src="images/ProfilePhoto.png"></a>
+                        <a href="#name"><span class="white-text name">Yilmaz Mustafa</span></a>
+                        <a href="#email"><span class="white-text email">yilmaz@mail.be</span></a>
+                    </div>
+                </li>
+                <li><a id="print-btn" href="#!"><i class="material-icons">cloud</i>CV as PDF</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+
+            <ul id="mobile-menu" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="images/ProfilePhoto.png">
+                        </div>
+                <li><a class="waves-effect" href="#info">Info</a></li>
+                <li><a class="waves-effect" href="#skills">Skills</a></li>
+                <li><a class="waves-effect" href="#courses">Courses</a></li>
+                <li><a class="waves-effect" href="#experience">Experience</a></li>
+                <li><a class="waves-effect" href="#education">Education</a></li>
+                <li><a class="waves-effect" href="#references">References</a></li>
+                <li><a class="waves-effect" href="#interests">Interests</a></li>
+                <li><a class="waves-effect" href="#hobbies">Hobbies</a></li>
+        </div>
+        </li>
+        </ul>
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile">
-        <li><a href="#info">Info</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#references">References</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-    </ul>
-
-    <section>
-        <div id="cv" class="container content">
+    <section id="info">
+        <div class="container content">
             <!-- Page Content goes here -->
             <div id="info" class="row section">
                 <div class="col">
                     <h4>Info</h4>
                 </div>
             </div>
-            <div class="row">
+            <div class="row hide-on-small-and-down">
                 <div class="col s12 m3 l3">
                     <i class="small material-icons">phone</i>
                     </span>+32 467 71 17 09<span>
@@ -107,22 +110,49 @@
                     </span>github.com/yilmazchef<span>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <blockquote>Solving serious problems is my endeavor.
+                        Coding is not only a work, it is a way of life.
+                        </br> I am looking for a job I love.</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container content">
             <div id="skills" class="row">
                 <div class="col">
-                    <h4>Skills</h4>
+                    <h4>Projects</h4>
                 </div>
             </div>
             <div id="projects" class="row">
                 <div class="col s12 m12 l12">
                     <div class="carousel carousel-slider">
                         <a class="carousel-item" href="#one!"><img src="images/hanedan_be.png"></a>
+                        <a class="carousel-item" href="#two!"><img src="images/hanedan_be.png"></a>
+                        <a class="carousel-item" href="#three!"><img src="images/hanedan_be.png"></a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <section id="skills">
+        <div class="container content">
+            <div id="skills" class="row">
+                <div class="col">
+                    <h4>Skills</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/html2pdf.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
 
     <footer class="page-footer footer">
         <div class="footer-copyright">
@@ -131,6 +161,7 @@
             </div>
         </div>
     </footer>
+
 
 </body>
 
